@@ -1,5 +1,3 @@
-
-
 操作记录：
 
 要导出PyCharm的配置文件（包括所有第三方库的设置）给其他人使用，可以通过以下步骤来操作：
@@ -22,6 +20,7 @@
      ```bash
      pip freeze > requirements.txt
      ```
+   
    - 如果使用的是Conda环境，可以运行以下命令来生成环境文件：
      
      ```bash
@@ -45,6 +44,7 @@
        ```bash
        pip install -r requirements.txt
        ```
+     
      - 或者使用`environment.yml`文件来重建Conda环境：
        
        ```bash
@@ -69,9 +69,7 @@ pip install -r requirements.txt
 如果是Python虚拟环境，可以通过以下方式激活：
 
 - Windows:
+  
   ```bash
   venv\Scripts\activate
   ```
-
-
-
