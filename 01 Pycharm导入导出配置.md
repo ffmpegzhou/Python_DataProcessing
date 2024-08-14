@@ -51,4 +51,27 @@
        conda env create -f environment.yml
        ```
 
+使用`pip install -r requirements.txt`命令时，这个命令会查找当前工作目录下的`requirements.txt`文件，然后根据文件里列出的包及其版本号来安装依赖。
+把`requirements.txt`文件放置在你的项目根目录下。
+
+如果`requirements.txt`文件不在当前工作目录，需要指定文件的完整路径。例如，如果文件位于`/path/to/your/project/requirements.txt`，那么：
+
+```bash
+pip install -r /path/to/your/project/requirements.txt
+```
+
+或者已经使用`cd`命令切换到了包含`requirements.txt`的目录，只需运行：
+
+```bash
+pip install -r requirements.txt
+```
+
+如果是Python虚拟环境，可以通过以下方式激活：
+
+- Windows:
+  ```bash
+  venv\Scripts\activate
+  ```
+
+
 
